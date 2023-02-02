@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import CampaignInfo from "./CampaignInfo";
+import CampaignMedia from "./CampaignMedia";
 
 function Campaign() {
   const [campaigns, setCampaigns] = useState([]);
@@ -15,7 +17,17 @@ function Campaign() {
 
   console.log(campaigns);
   return (
-    <h1>Hi</h1>
+    <div>
+      {campaigns.map((campaign) => {
+        return (
+          <div>
+            <CampaignInfo campaign={campaign} />
+            <CampaignMedia />
+          </div>
+        )
+      })}
+      
+    </div>
   )
 }
 

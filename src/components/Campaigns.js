@@ -15,7 +15,6 @@ function Campaign() {
     fetchData();
   },[])
 
-  console.log(campaigns);
   return (
     <div className="p-5">
       {campaigns.map((campaign) => {

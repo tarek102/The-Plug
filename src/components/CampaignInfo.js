@@ -1,8 +1,6 @@
 import React from "react";
 
-function CampaignInfo(campaign) {
-  console.log(campaign.campaign);
-  
+function CampaignInfo(campaign) {  
   return(
     <div className="d-flex">
       <div className="w-25">

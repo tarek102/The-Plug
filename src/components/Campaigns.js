@@ -17,12 +17,12 @@ function Campaign() {
 
   console.log(campaigns);
   return (
-    <div className="py-5">
+    <div className="p-5">
       {campaigns.map((campaign) => {
         return (
           <div>
             <CampaignInfo key={campaign.id} campaign={campaign} />
-            <CampaignMedia />
+            <CampaignMedia campaign={campaign}/>
           </div>
         )
       })}
